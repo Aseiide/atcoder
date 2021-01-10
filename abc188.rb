@@ -1,14 +1,13 @@
 N = gets.to_i
 A = gets.split.map(&:to_i)
 B = gets.split.map(&:to_i)
-# N回繰り返す
-# Aから一個ずつ、Bから一個ずつ、取り出す
-# 取り出したものをそれぞれ積をとる
-# それらの和をとる
-# 結果が0かどうか判定
 
+sum = 0
 N.times do
-  A.each do |i|
-    ary =
-  end
+  A.length.times { |i|sum += A[ i ] * B[ i ]}
+end
+if sum == 0
+  puts "Yes"
+else
+  puts "No"
 end

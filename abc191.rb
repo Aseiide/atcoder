@@ -6,6 +6,9 @@ s = a.select{|v| a.count(v) > 1}.uniq #[]かぶったものが出力
 if [x] == s
   f = newary - [x]
   puts f.join(' ')
+elsif [x] != s
+  z = newary - [x]
+  puts z.join(' ')
 else
-  puts 
+  puts
 end

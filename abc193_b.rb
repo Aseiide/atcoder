@@ -3,9 +3,7 @@ ans = Float::INFINITY
  
 N.times do
   a, q, x = gets.split.map(&:to_i)
- 
   next if x - a <= 0
- 
   ans = q if ans > q
 end
  

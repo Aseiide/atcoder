@@ -1,14 +1,9 @@
-n = gets.chomp #string
+n = gets.chomp
 s = n.to_i
-
+ 
 while s%10 == 0
   s /= 10
   break
-end
-
-case n
-when  "0"
-  puts "Yes"
 end
 
 X = s.to_s.reverse
